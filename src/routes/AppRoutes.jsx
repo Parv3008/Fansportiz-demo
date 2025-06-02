@@ -5,7 +5,6 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home/>} />
-      {/* Add more routes like <Route path="/about" element={<About />} /> */}
     </Routes>
   );
 }

@@ -3,7 +3,7 @@ import downarrow from "../../assets/img/down arrow.svg";
 
 export default function Hero() {
   return (
-    <section className="text-center pt-4 bg-gradient-to-b from-white to-gray-200">
+    <section className="text-center pt-4 bg-hero-pattern bg-center object-cover">
       <h1 className="font-jersey text-4xl sm:text-6xl md:text-7.5xl font-normal leading-tight text-blue ">
         <span className="text-orange">Captivate</span> your audience <br />
         with our whitelabel solution
@@ -17,10 +17,10 @@ export default function Hero() {
         <img src={heroimg} alt="Cricket Blue" className="" />
       </div>
 
-      <div className="mt-10 pb-4 text-sm text-blue flex justify-center items-center flex-col cursor-pointer">
-         <div className="font-semibold text-xl text-blue">SCROLL</div>
+      <a href="#next-section" className="mt-10 pb-4 text-sm text-blue flex justify-center items-center flex-col cursor-pointer">
+         <div className="font-semibold text-xl text-blue hover:text-orange transition duration-200">SCROLL</div>
         <div className="animate-bounce mt-2"><img src={downarrow} alt="" /></div>
-      </div>
+      </a>
     </section>
   );
 }

@@ -15,18 +15,18 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white sticky top-0 z-50">
-      <header className="  bg-white">
+    <div className="bg-white sticky top-0 z-50 bg-gradient-to-b">
+      <header className="bg-white">
         <nav
           aria-label="Global"
-          className="flex items-center justify-between p-3 lg:px-8"
+          className="flex items-center justify-between p-3 lg:px-8 bg-gradient-to-b to-[#E6E6E700] from-[#E6E6E700]"
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <img
                 alt=""
                 src={logo}
-                className="h-14 w-auto lg:h-28 md:h-20 sm:h-14 "
+                className="h-14 w-auto lg:min-h-28 md:min-h-20 sm:min-h-14 "
               />
             </a>
           </div>
@@ -39,17 +39,17 @@ export default function Navbar() {
               <Bars3Icon aria-hidden="true" className="size-10" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-8 items-center lg:text-sm">
+          <div className="hidden lg:flex lg:gap-x-7 xl:gap-x-[60px] items-center lg:text-sm ">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-xl-plus font-semibold text-blue"
+                className="lg:text-lg xl:text-xl-plus font-semibold text-blue hover:text-orange transition duration-200"
               >
                 {item.name}
               </a>
             ))}
-            <button className="text-xl-plus font-bold text-white bg-blue lg:px-10 lg:py-4 rounded hover:bg-orange transition">
+            <button className="text-xl-plus font-bold text-white bg-blue lg:px-6 lg:py-4 xl:px-10 xl:py-[18px] rounded hover:bg-orange transition">
               START A PROJECT
             </button>
           </div>
