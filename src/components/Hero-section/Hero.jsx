@@ -1,4 +1,4 @@
-import heroimg from "../../assets/img/hero-img.png";
+import heroimg from "../../assets/img/Hero-img.png";
 import downarrow from "../../assets/img/down arrow.svg";
 
 export default function Hero() {
